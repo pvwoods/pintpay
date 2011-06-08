@@ -1,18 +1,14 @@
 {
-    "name": "pintpay",
-    "description": "A library that interfaces with the PintPay API",
-    "version": "0.1.0",
-    "homepage": "http://github.com/pvwoods/pintpay/",
-    "author": "Philip Woods (http://github.com/pvwoods/)",
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://github.com/pvwoods/pintpay/raw/master/LICENSE"
-        }
-    ],
-    "main": "pintpay.js",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/pvwoods/pintpay.git"
-    }
+  "name": "pintpay",
+  "description": "Pintpay API library",
+  "version": "0.0.1",
+  "author": "Philip Woods",
+  "dependencies": {
+    "restler": ">= 0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pvwoods/pintpay.git"
+  },
+  "main": "pintpay.js"
 }
