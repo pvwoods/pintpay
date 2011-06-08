@@ -1,1 +1,5 @@
 PintPay Node.js package
+
+PintPay is available through NPM.
+
+$ npm install pintpay
