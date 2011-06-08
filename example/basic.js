@@ -1,4 +1,4 @@
-var pint = require('./pintpay');
+var pint = require('../pintpay');
 
 var pintpay = new pint.PintPay('YOUR_KEY', 'YOUR_SECRET');
 

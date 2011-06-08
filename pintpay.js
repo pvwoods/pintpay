@@ -8,15 +8,18 @@ var PintPay = exports.PintPay = function(key, secret) {
 
 PintPay.prototype.dispatchRequest = function(request, callback, shouldPut){
     requestURL = this.PINTPAY_BASE_URL + request + "?api_key=" + this.api_key + "&api_secret=" + this.api_secret;
-    console.log(requestURL);
     if(shouldPut == null){
         rest.get(requestURL).on('complete', function(data) {
             callback(data);
-        });
+        }).on('error', function(error) {
+            console.log("PINTPAY API ERROR :: " + error);
+        });;
     }else if(shouldPut == true){
         rest.put(requestURL).on('complete', function(data) {
             callback(data);
-        });
+        }).on('error', function(error) {
+            console.log("PINTPAY API ERROR :: " + error);
+        });;
     }
     
 }
